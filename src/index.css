@@ -1,0 +1,83 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.container{
+  margin-top: 20px;
+  box-shadow: 0px 0px 1px whitesmoke;
+  border-radius: 10px;
+  width: 80%;
+  height: fit-content;
+  min-height: 80vh;
+  padding: 20px;
+}
+.container .maintitle{
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+form.addTodoForm{
+  width: 100%;
+  display: flex;
+
+}
+form.addTodoForm .addMessageBox{
+  flex-grow: 1;
+  padding: 10px ;
+  font-size: 16px;
+}
+form.addTodoForm .formSubmitBtn{
+  padding: 10px;
+  letter-spacing: 1px;
+}
+.todoItem{
+  padding: 10px 0px;
+  margin: 20px 0px;
+  box-shadow: 0px 0px 1px  whitesmoke;
+  display: flex;
+}
+.todoItem input.checkBox{
+  margin: 0px 10px;
+}
+.todoItem .todoTitle{
+  padding: 10px;
+  flex-grow: 1;
+  font-size: 15px;
+  margin-right: 10px;
+  color: white;
+  letter-spacing: 1px;
+}
+.todoItem input.todoTitle.taskCompleted{
+  text-decoration: line-through;
+  color: rgb(18, 221, 18);
+}
+.todoItem input.todoTitle.editOptionOff{
+  border: 1.6px solid #242424;
+  background-color: #242424;
+}
+.todoItem .editBtn, .todoItem .deleteBtn{
+  padding: 10px;
+  margin-right: 10px;
+}
